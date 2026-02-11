@@ -1,0 +1,14 @@
+function updateStatus() {
+    const status = document.getElementById('status-text');
+    const messages = [
+        "Skript wird ausgeführt...",
+        "Daten werden geladen...",
+        "Erfolg! Du bist ein Coder.",
+        "System läuft stabil."
+    ];
+    
+    // Zufällige Nachricht auswählen
+    const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+    status.innerText = randomMsg;
+    status.classList.add('text-green-400');
+}
